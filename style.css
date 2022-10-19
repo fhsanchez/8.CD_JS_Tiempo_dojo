@@ -1,0 +1,168 @@
+*{
+    margin: 0px;   
+    font-family: sans-serif;
+}
+
+.header{
+   
+    background-color: #9bc2f8;
+    color: white; 
+    display: flex;
+    justify-content: center;
+}
+
+.nav{    
+    width: 1100px;
+    height: 80px;   
+    display: flex;    
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-title{
+    width: 60px;
+    text-align: right;    
+}
+
+.nav-links{  
+    width: 340px;   
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    vertical-align: top;    
+    justify-content: flex-start;    
+    font-size: 20px;
+    
+}
+
+li {
+    list-style: none;
+    width: 70px;
+    margin-left: 30px;
+}
+
+a{
+    text-decoration: none; 
+    color:white;
+}
+
+/* Seccion de Contenedor */
+.container{    
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+.container>section{
+    width: 1200px;
+}
+*/
+
+.container>section.titulo{
+    width: 1100px;
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+    font-size: 20px;     
+}
+
+.container>section.titulo>div{
+    margin-right: 10px;
+    text-align: right;
+}
+
+
+
+.linea{
+    border-bottom: 3px solid  #7d7d7e;
+}
+/*
+.temper{
+    text-align: right;
+    width: 220px;
+}
+*/
+
+.weather{
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.weather>article>h3{
+    font-size: 16px;;
+}
+
+.weather{        
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather>article{
+    height: 290px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;    
+    background-color: #ececec;
+}
+
+.weather>article *{
+    margin-top: 20px;
+}
+ 
+.weather>article>h3{
+    font-size: 20px;
+}
+
+.weather>article>img{
+    width: 40%;
+    border-radius: 50%;
+}
+
+.weather>article>div>span.t_max{ 
+    padding-left: 5px;   
+    color:  #2875d3;
+    font-weight: bold;
+}
+
+.weather>article>div>span.t_min{
+    color:  #d13f31;
+    font-weight: bold;
+}
+
+.footer{
+    width: 1100px;
+    height: 90px;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:  #dbd7d3; 
+    border: 3px solid  #7d7d7e;
+}
+.footer>article>img{
+    width: 64px;
+}
+.footer>article>p{
+    width: 800px;
+}
+
+.footer>article>p>a{
+    color: #4b89dd;
+}
+
+
+.f_button>input{
+    width: 100px;
+    background-color: #9bc3fb;
+}
