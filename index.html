@@ -8,6 +8,7 @@
     <title>Tiempo DOJO</title>
 
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -15,9 +16,9 @@
         <div class="nav">
             <h1 class="nav-title">DojoWeather</h1>
             <ul class="nav-links">
-                <li><a href="#">Burbank</a></li>
-                <li><a href="#">Chicago</a></li>
-                <li><a href="#">Dallas</a></li>
+                <li><a class="botones" id="cityBurbank" href="#">Burbank</a></li>
+                <li><a class="botones" id="cityChicago" href="#">Chicago</a></li>
+                <li><a class="botones" id="cityDallas" href="#">Dallas</a></li>
             </ul>
         </div>
     </header>
@@ -29,7 +30,7 @@
                 <p>show temperature in</p>
             </div>
             <div>
-                <select name="temperature">
+                <select id="convierteTemp" name="temperature">
                     <option selected value="cels">C°</option>
                     <option value="fare">F°</option>
                 </select>
@@ -42,8 +43,8 @@
                 <img src="assets/some_rain.png">
                 <p>some rain</p>
                 <div>
-                    <span class="t_max">24°</span>
-                    <span class="t_min">18°</span>
+                    <span class="t_max">24</span><span id="t_max">°</span>
+                    <span class="t_min">18</span><span id="t_min">°</span>
                 </div>
             </article>
             <article>
@@ -51,8 +52,8 @@
                 <img src="assets/some_sun.png">
                 <p>some sun</p>
                 <div>
-                    <span class="t_max">27°</span>
-                    <span class="t_min">19°</span>
+                    <span class="t_max">27</span><span id="t_max">°</span>
+                    <span class="t_min">19</span><span id="t_min">°</span>
                 </div>
             </article>
             <article>
@@ -60,8 +61,8 @@
                 <img src="assets/some_clouds.png">
                 <p>some clouds</p>
                 <div>
-                    <span class="t_max">21°</span>
-                    <span class="t_min">16°</span>
+                    <span class="t_max">21</span><span id="t_max">°</span>
+                    <span class="t_min">16</span><span id="t_min">°</span>
                 </div>
             </article>
             <article>
@@ -69,8 +70,8 @@
                 <img src="assets/some_sun.png">
                 <p>some sun</p>
                 <div>
-                    <span class="t_max">26°</span>
-                    <span class="t_min">21°</span>
+                    <span class="t_max">26</span><span id="t_max">°</span>
+                    <span class="t_min">21</span><span id="t_min">°</span>
                 </div>
             </article>
         </section>
@@ -90,6 +91,7 @@
         </footer>
     </main>
 
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>
